@@ -4,11 +4,11 @@
 
 class User {
 public:
-    std::string username;
-    std::string password;
+    std::string username;  // Имя пользователя
+    std::string password;  // Пароль пользователя
 
     User(const std::string& username, const std::string& password);
 
-    std::string getName() const;
-    std::string getPassword() const;
+    std::string getName() const;  // Возвращает имя пользователя
+    std::string getPassword() const;  // Возвращает пароль пользователя
 };
