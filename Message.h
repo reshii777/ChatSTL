@@ -5,15 +5,15 @@
 
 class Message {
 private:
-    User* sender;
-    std::string text;
+    User* sender;  // Указатель на отправителя сообщения
+    std::string text;  // Текст сообщения
 
 public:
-    Message(User* sender, const std::string& text);
+    Message(User* sender, const std::string& text);  // Конструктор класса Message
 
-    User* getSender() const;
-    std::string getText() const;
+    User* getSender() const;  // Получить отправителя сообщения
+    std::string getText() const;  // Получить текст сообщения
 
-    void setSender(User* sender);
-    void setText(const std::string& text);
+    void setSender(User* sender);  // Установить отправителя сообщения
+    void setText(const std::string& text);  // Установить текст сообщения
 };
